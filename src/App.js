@@ -11,7 +11,7 @@ const App = () => {
         <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/link" element={<Second />} />
+          <Route path="{`${process.env.PUBLIC_URL}/link`}" element={<Second />} />
           <Route path="/about" element={<About />} />
         </Routes>
         </Router>
